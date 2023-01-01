@@ -8,15 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    func executeDelete() {
+        print("Now deleting")
+    }
     
     var body: some View {
-//        LinearGradient(gradient: Gradient(colors: [.white, .black]), startPoint: .topLeading, endPoint: .bottomTrailing )
-//            .ignoresSafeArea()
-//        RadialGradient(gradient: Gradient(colors: [.blue, .black]), center: .center, startRadius: 20, endRadius: 200 )
-//                    .ignoresSafeArea( )
-        AngularGradient(gradient: Gradient(colors: [.red, .yellow, .green, .blue, .purple, .red]), center: .center )
-                    .ignoresSafeArea()
+        Button("Delete selection", action: executeDelete)
     }
+    
+   
 }
 
 struct ContentView_Previews: PreviewProvider {
